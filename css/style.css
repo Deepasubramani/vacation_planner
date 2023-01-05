@@ -228,14 +228,14 @@ P,
 }
 
 #popular-item .details {
-    width: 150px;
+    width: 160px;
 }
 
 #popular-item li>img {
     display: block;
     object-fit: cover;
     background-repeat: no-repeat;
-    width: 120px;
+    width: 100px;
     height: 130px;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
