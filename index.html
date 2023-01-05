@@ -12,10 +12,12 @@
   <!--google-font/Raleway Library-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
   <!-- Font Awesome Icon Library -->
   <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  
   <link href="css/style.css" type="text/css" rel="stylesheet">
   <!-- <link href="./css/normalize.css" rel="stylesheet" type="text/css"> -->
   <style>
@@ -29,7 +31,7 @@
         <img src="images/Booki.png" alt="Booki logo" title="Booki" />
       </nav>
       <nav id="navigation">
-        <a href="#main-section">Accommodations</a>
+        <a href="#main-section" class="focus">Accommodations</a>
         <a href="#Activities-section">Activities</a>
       </nav>
     </div>
@@ -39,8 +41,7 @@
           <strong>Find a place for your dream vacation</strong>
     <p>Downtown or in nature</p>
     <div class="search-local">
-      <form >
-        <span class="fa fa-map-marker map-icon fa-lg map_icon"></span>
+        <span class="fa-solid fa-location-dot map-icon"></span>
         <input type="text" class="text_input" placeholder="Marseille,France">
         <button>
           <span class="search-text">Search</span>
@@ -51,25 +52,24 @@
       <div class="filters">
         <strong>Filters </strong>
         <div class=" filter-item">
-          <span class="fa fa-map-marker filter-icon"></span>
-          <h4>Low Cost</h4>
+          <i class="fa-solid fa-money-bill-wave filter-icon"></i>
+          <h5>Low Cost</h5>
         </div>
         <div class=" filter-item">
-          <span class="fa fa-map-marker filter-icon"></span>
-          <h4>Family-friendly</h4>
+          <span class="fa-solid fa-child-reaching filter-icon"></span>
+          <h5>Family-friendly</h5>
         </div>
         <div class=" filter-item">
-          <span class="fa fa-map-marker filter-icon"></span>
-          <h4>Romantic</h4>
+          <span class="fa-sharp fa-solid fa-heart filter-icon"></span>
+          <h5>Romantic</h5>
         </div>
         <div class=" filter-item">
-          <span class="fa fa-map-marker filter-icon"></span>
-          <h4>Pets allowed</h4>
+          <span class="fa-solid fa-dog filter-icon"></span>
+          <h5>Pets allowed</h5>
         </div>
       </div>
-   
       <div style="display: flex;align-items: center;">
-        <i class="fa fa-info-circle"></i>
+        <i class="fa fa-info fa-xs"></i>
         <p>More than 500 accommodations are available in this city</p>
       </div>
       </div>
@@ -176,7 +176,7 @@
       <div id="popular-section">
         <nav>
           <h3>Most popular</h3>
-          <i class="fa fa-star checked" style="color: black;"></i>
+          <i class="fa fa-star" style="color: black;"></i>
         </nav>
         <ul id="popular-item">
           <li>
@@ -184,7 +184,7 @@
             <img src="images/Morning-SunHotel.jpg" alt="location img" title="oldport" />
             <div class="details">
               <h5>Morning Sun Hotel</h5>
-              <p>Night starting at  <b>128€</b></p>
+              <p>Night starting at 128€</p>
               <div class="rating_star">
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -231,7 +231,7 @@
         <li>
           <img src="images/old_port.jpg" alt="location img" title="oldport" />
           <div class="details">
-            <h3>Old Port</h3>
+            <h5>Old Port</h5>
           </div>
         </li>
       </ul>
@@ -239,13 +239,13 @@
         <li>
           <img src="images/pomegues_fort.jpg" alt="location img" title="oldport" />
           <div class="details">
-            <h3>Pomegues Fort</h3>
+            <h5>Pomegues Fort</h5>
           </div>
         </li>
         <li>
           <img src="images/frioul_island.jpg" alt="location img" title="oldport" />
           <div class="details">
-            <h3>Frious Island</h3>
+            <h5>Frious Island</h5>
           </div>
         </li>
       </ul>
@@ -253,7 +253,7 @@
         <li>
           <img src="images/calanques_national_park.jpg" alt="location img" title="oldport" />
           <div class="details">
-            <h3>Calanques National Park</h3>
+            <h5>Calanques National Park</h5>
           </div>
         </li>
       </ul>
@@ -261,13 +261,13 @@
         <li>
           <img src="images/notre.jpg" alt="location img" title="oldport" />
           <div class="details">
-            <h3>Notre-Dame-de-la-Grade</h3>
+            <h5>Notre-Dame-de-la-Grade</h5>
           </div>
         </li>
         <li>
           <img src="images/longchamp_park.jpg" alt="location img" title="oldport" />
           <div class="details">
-            <h3>Longchamp Park</h3>
+            <h5>Longchamp Park</h5>
           </div>
         </li>
       </ul>
