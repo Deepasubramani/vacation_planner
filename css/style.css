@@ -291,6 +291,7 @@ form {
 }
 
 .search-location {
+    
 margin-top: 10px;
     position: absolute;
     border: 1px solid #f2f2f2;
@@ -427,7 +428,6 @@ footer div{
         display: unset !important;
         color: white;
     }
-
     .search-location button {
         border-radius: 10px;
     }
@@ -469,7 +469,6 @@ footer div{
     }
 
     .Activities-list img {
-        min-width: 335px !important;
         min-height: 140px !important;
         max-height: 140px !important;
     }
