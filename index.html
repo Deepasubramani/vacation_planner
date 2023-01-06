@@ -25,12 +25,14 @@
 <body>
   <header>
     <div class="nav-section">
-      <nav>
-        <img src="images/Booki.png" alt="Booki logo" title="Booki" />
+      <nav id="logo">
+        <img src="images/Booki.png" alt="Booki logo" >
       </nav>
       <nav id="navigation">
-        <a href="#Accommodations-section" class="focus">Accommodations</a>
-        <a href="#Activities-section">Activities</a>
+        <ul>
+          <li><a href="#Accommodations-section" class="selected">Accommodations</a></li>
+          <li><a href="#Activities-section" class="unselected">Activities</a></li>
+        </ul>
       </nav>
     </div>
   </header>
@@ -38,45 +40,46 @@
     <div class="search-section">
       <strong>Find a place for your dream vacation</strong>
       <p>Downtown or in nature</p>
-      <div class="search-location">
-        <span class="fa-solid fa-location-dot map-icon"></span>
-        <input type="text" class="search-input" placeholder="Marseille,France">
-        <button>
-          <span class="search-button-text">Search</span>
-          <span class="search-icon fa fa-search"></span>
-        </button>
-        </form>
+      <form>
+        <div class="search-location">
+          <span class="fa-solid fa-location-dot map-icon"></span>
+          <input type="text" class="search-input" placeholder="Marseille,France">
+          <button>
+            <span class="search-button-text">Search</span>
+            <span class="search-icon fa fa-search"></span>
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="filters">
+      <strong>Filters </strong>
+      <div class=" filter-item">
+        <i class="fa-solid fa-money-bill-wave filter-icon"></i>
+        <h5>Low Cost</h5>
       </div>
-      <div class="filters">
-        <strong>Filters </strong>
-        <div class=" filter-item">
-          <i class="fa-solid fa-money-bill-wave filter-icon"></i>
-          <h5>Low Cost</h5>
-        </div>
-        <div class=" filter-item">
-          <span class="fa-solid fa-child-reaching filter-icon"></span>
-          <h5>Family-friendly</h5>
-        </div>
-        <div class=" filter-item">
-          <span class="fa-sharp fa-solid fa-heart filter-icon"></span>
-          <h5>Romantic</h5>
-        </div>
-        <div class=" filter-item">
-          <span class="fa-solid fa-dog filter-icon"></span>
-          <h5>Pets allowed</h5>
-        </div>
+      <div class=" filter-item">
+        <span class="fa-solid fa-child-reaching filter-icon"></span>
+        <h5>Family-friendly</h5>
       </div>
-      <div style="display: flex;align-items: center;">
-        <i class="fa fa-info fa-xs"></i>
-        <p>More than 500 accommodations are available in this city</p>
+      <div class=" filter-item">
+        <span class="fa-sharp fa-solid fa-heart filter-icon"></span>
+        <h5>Romantic</h5>
       </div>
+      <div class=" filter-item">
+        <span class="fa-solid fa-dog filter-icon"></span>
+        <h5>Pets allowed</h5>
+      </div>
+    </div>
+    <div id="info-section">
+      <i class="fa fa-info fa-xs"></i>
+      <p>More than 500 accommodations are available in this city</p>
     </div>
     <div id="Accommodations-section">
       <div id="Accommodation-list">
         <h3>Accommadation in Marseille</h3>
         <ul class="image-list">
           <li>
-            <img src="images/Auberge-la-Cannebiere.jpg" alt="Auberge la Cannebiere" title="Auberge la Cannebiere" />
+            <img src="images/Auberge-la-Cannebiere.jpg" alt="Auberge la Cannebiere">
             <div class="details">
               <h5>Auberge la Cannebiere</h5>
               <p>Night starting at <b>25€</b> </p>
@@ -91,7 +94,7 @@
             </div>
           </li>
           <li>
-            <img src="images/Hotel-du-port.jpg" alt="Hotel du port" title="Hotel du port" />
+            <img src="images/Hotel-du-port.jpg" alt="Hotel du port">
             <div class="details">
               <h5>Hotel du port</h5>
               <p>Night starting at <b>52€</b></p>
@@ -105,7 +108,7 @@
             </div>
           </li>
           <li>
-            <img src="images/Les-mouettes-Hotel.jpg" alt="Les mouettes Hotel" title="Les mouettes Hotel" />
+            <img src="images/Les-mouettes-Hotel.jpg" alt="Les mouettes Hotel">
             <!-- <a href="#" style="background-image: url('images/Les-mouettes-Hotel.jpg');"></a> -->
             <div class="details">
               <h5>Les mouettes Hotel</h5>
@@ -122,7 +125,7 @@
         </ul>
         <ul class="image-list">
           <li>
-            <img src="images/Hotel-de-la-mer.jpg" alt="Hotel de la mer" title="Hotel de la mer" />
+            <img src="images/Hotel-de-la-mer.jpg" alt="Hotel de la mer" >
             <div class="details">
               <h5>Hotel de la mer</h5>
               <p>Night starting at <b>46€</b></p>
@@ -136,7 +139,7 @@
             </div>
           </li>
           <li>
-            <img src="images/Auberge-la-Cannebiere.jpg" alt="Auberge Le Panier" title="Auberge Le Panier" />
+            <img src="images/Auberge-la-Cannebiere.jpg" alt="Auberge Le Panier" >
             <div class="details">
               <h5>Auberge Le Panier</h5>
               <p>Night starting at <b>23€</b></p>
@@ -150,7 +153,7 @@
             </div>
           </li>
           <li>
-            <img src="images/Hotel-chez-Amina.jpg" alt="Hotel chez Amina" title="Hotel chez Amina" />
+            <img src="images/Hotel-chez-Amina.jpg" alt="Hotel chez Amina" >
             <div class="details">
               <h5>Hotel chez Amina</h5>
               <p>Night starting at <b>96€</b></p>
@@ -173,7 +176,7 @@
         </nav>
         <ul id="popular-item">
           <li>
-            <img src="images/Morning-SunHotel.jpg" alt="Morning Sun Hotel" title="Morning Sun Hotel" />
+            <img src="images/Morning-SunHotel.jpg" alt="Morning Sun Hotel" >
             <div class="details">
               <h5>Morning Sun Hotel</h5>
               <p>Night starting at 128€</p>
@@ -187,7 +190,7 @@
             </div>
           </li>
           <li>
-            <img src="images/Au-co-de.jpg" alt="Bed and Breakfast" title="Bed and Breakfast" />
+            <img src="images/Au-co-de.jpg" alt="Bed and Breakfast" >
             <div class="details">
               <h5>Au coeur de l'eau Bed and Breakfast</h5>
               <p>Night starting at <b>71€</b></p>
@@ -201,7 +204,7 @@
             </div>
           </li>
           <li>
-            <img src="images/Tout-bleu-et-Blanc-Hotel.jpg" alt="Tout bleu et Blanc Hotel" title="Tout bleu et Blanc Hotel" />
+            <img src="images/Tout-bleu-et-Blanc-Hotel.jpg" alt="Tout bleu et Blanc Hotel">
             <div class="details">
               <h5>Tout bleu et Blanc Hotel</h5>
               <p>Night starting at <b>68€</b></p>
@@ -219,7 +222,7 @@
     <div id="Activities-section">
       <ul class="Activities-list">
         <li>
-          <img src="images/old_port.jpg" alt="Old Port" title="Old Port" />
+          <img src="images/old_port.jpg" alt="Old Port">
           <div class="details">
             <h5>Old Port</h5>
           </div>
@@ -227,21 +230,21 @@
       </ul>
       <ul class="Activities-list-two">
         <li>
-          <img src="images/pomegues_fort.jpg" alt="Pomegues Fort" title="Pomegues Fort" />
+          <img src="images/pomegues_fort.jpg" alt="Pomegues Fort">
           <div class="details">
             <h5>Pomegues Fort</h5>
           </div>
         </li>
         <li>
-          <img src="images/frioul_island.jpg" alt="Frious Island" title="Frious Island" />
+          <img src="images/frioul_island.jpg" alt="Frious Island">
           <div class="details">
             <h5>Frious Island</h5>
           </div>
         </li>
       </ul>
-      <ul class="Activities-list" id="Activities-section">
+      <ul class="Activities-list">
         <li>
-          <img src="images/calanques_national_park.jpg" alt="Calanques National Park" title="Calanques National Park" />
+          <img src="images/calanques_national_park.jpg" alt="Calanques National Park">
           <div class="details">
             <h5>Calanques National Park</h5>
           </div>
@@ -249,13 +252,13 @@
       </ul>
       <ul class="Activities-list-two">
         <li>
-          <img src="images/notre.jpg" alt="Notre-Dame-de-la-Grade" />
+          <img src="images/notre.jpg" alt="Notre-Dame-de-la-Grade">
           <div class="details">
             <h5>Notre-Dame-de-la-Grade</h5>
           </div>
         </li>
         <li>
-          <img src="images/longchamp_park.jpg" alt="Longchamp Park" title="Longchamp Park" />
+          <img src="images/longchamp_park.jpg" alt="Longchamp Park">
           <div class="details">
             <h5>Longchamp Park</h5>
           </div>
@@ -265,30 +268,31 @@
     </div>
 
   </main>
+
+  <footer>
+    <div>
+      <h2 class="footer-heading">About</h2>
+      <ul class="footer-item">
+        <li>Site Map</li>
+        <li>General Terms and Conditions</li>
+        <li>Data and Privacy</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-heading">Our Accommodations</h2>
+      <ul class="footer-item">
+        <li>Quality Assessment</li>
+        <li>You have a hotel?</li>
+      </ul>
+    </div>
+    <div>
+      <h2 class="footer-heading">Assistance</h2>
+      <ul class="footer-item">
+        <li>Help Desk</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+  </footer>
 </body>
-<footer>
-  <div>
-    <h2 class="footer-heading">About</h2>
-    <ul class="footer-item">
-      <li>Site Map</li>
-      <li>General Terms and Conditions</li>
-      <li>Data and Privacy</li>
-    </ul>
-  </div>
-  <div>
-    <h2 class="footer-heading">Our Accommodations</h2>
-    <ul class="footer-item">
-      <li>Quality Assessment</li>
-      <li>You have a hotel?</li>
-    </ul>
-  </div>
-  <div>
-    <h2 class="footer-heading">Assistance</h2>
-    <ul class="footer-item">
-      <li>Help Desk</li>
-      <li>Contact Us</li>
-    </ul>
-  </div>
-</footer>
 
 </html>
