@@ -1,35 +1,28 @@
 div {
     box-sizing: border-box;
 }
-
 body {
     line-height: 0.7;
     margin: 0px;
     font-family: 'Raleway';
 }
-
-strong {
-    font-weight: 900;
-
-}
-
 main,
 header {
     margin: 30px;
-}
-.details{
-    line-height: 1;
 }
 ul,
 ol {
     list-style: none;
     display: inline-block;
 }
-
+/* header navigation */
 .nav-section {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+.nav-section img {
+    width: 100px;
 }
 .fa-info{
     padding: 6px;
@@ -40,9 +33,7 @@ ol {
     color: #0065fc;
     margin-right: 5px;
 }
-.nav-section img {
-    width: 100px;
-}
+
 .filter-item .fa-solid{
     color:#0065fc
     }
@@ -70,11 +61,11 @@ ol {
         justify-content: center;
     }
 
-    #main-section {
+    #Accommodations-section {
         flex-direction: column-reverse;
     }
 
-    .main_section_search {
+    .search-section {
         margin: 20px;
     }
 
@@ -88,15 +79,15 @@ ol {
         width: 100% !important;
     }
 
-    #Activities_header {
+    #Activities-header {
         padding-left: 20px;
     }
 
-    #Activities_section {
+    #Activities-section {
         padding: 20px;
     }
 
-    #Acc-section {
+    #Accommodation-list {
         background-color: white !important;
         width: 100% !important;
         padding: 0px 20px !important;
@@ -111,10 +102,10 @@ ol {
         gap: 0px !important;
         flex-direction: column;
     }
-.Activities_list{
+.Activities-list{
     flex-direction: column;
 }
-    .Activities_list img {
+    .Activities-list img {
         min-height: 140px !important;
         max-height: 140px !important;
     }
@@ -132,7 +123,7 @@ body {
     font-size: 15px;
 }
 
-#Activities_section {
+#Activities-section {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -140,27 +131,27 @@ body {
     gap: 20px;
 }
 
-.Activities_list_two {
+.Activities-list-two {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 15px;
 }
 
-.Activities_list_two li {
+.Activities-list-two li {
     margin-bottom: 5px;
     border-radius: 15px;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
 
 }
 
-#Activities_section ul {
+#Activities-section ul {
     flex: 1;
     margin: 0;
     padding: 0;
 }
 
-.Activities_list li {
+.Activities-list li {
     display: flex;
     border-radius: 15px;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
@@ -168,7 +159,7 @@ body {
     flex: 1;
 }
 
-.Activities_list img {
+.Activities-list img {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -182,7 +173,7 @@ body {
     border-top-right-radius: 15px;
 }
 
-.Activities_list_two img {
+.Activities-list-two img {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -197,7 +188,7 @@ body {
 
 /*section 2*/
 
-#Acc-section {
+#Accommodation-list {
     background-color: #f2f2f2;
     border-radius: 25px;
     width: 60.66%;
@@ -220,7 +211,7 @@ body {
 
 
 
-#main-section {
+#Accommodations-section {
     display: flex;
     flex-wrap: wrap;
     gap: 25px;
@@ -314,7 +305,7 @@ button a {
 }
 
 /* Search bar style */
-.search-local .map-icon {
+.search-location .map-icon {
     background-color: #f2f2f2;
     padding: 12px;
     border-radius: 10px 0px 0px 10px;
@@ -334,7 +325,7 @@ form {
     display: none;
 }
 
-.search-local {
+.search-location {
 
     position: absolute;
     border: 1px solid #f2f2f2;
@@ -345,11 +336,17 @@ form {
     border: 2px solid #f2f2f2;
 }
 
-.text_input {
+.search-input {
     border: none;
 }
-
-.search-local button {
+#Accommodation-show-more{
+    text-decoration: none;
+    color: black;
+}
+#Accommodation-show-more:hover{
+    color: #0065fc;
+}
+.search-location button {
     padding: 10px;
     background: #0065fc;
     color: white;
@@ -357,7 +354,7 @@ form {
     border-radius: 0 10px 10px 0;
 }
 
-.search-local button {
+.search-location button {
     padding: 10px;
     background: #0065fc;
     color: white;
@@ -365,7 +362,7 @@ form {
     border-radius: 0 10px 10px 0;
 }
 
-.search-local button .search-icon {
+.search-location button .search-icon {
     display: none;
 }
 
@@ -397,21 +394,21 @@ form {
 }
 
 @media all and(max-width: 768px) {
-    button .search-text {
+    button .search-button-text {
         display: none;
     }
 
-    .search-local button .search-icon {
+    .search-location button .search-icon {
         display: unset;
         color: white;
     }
 
-    .search-local button {
+    .search-location button {
         border-radius: 10px;
     }
 }
 
-#Activities_section .details h5 {
+#Activities-section .details h5 {
     padding-left: 15px;
 }
 
@@ -425,11 +422,11 @@ footer {
     background-color: #80808017
 }
 
-.footer_heading {
+.footer-heading {
     font-weight: bold;
 }
 
-.footer_item {
+.footer-item {
     list-style: none;
     padding: 0;
     margin: 0;

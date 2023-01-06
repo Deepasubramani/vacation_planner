@@ -13,13 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> -->
   <!-- Font Awesome Icon Library -->
-  <!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-  
+  <!--Custom style sheet-->
   <link href="css/style.css" type="text/css" rel="stylesheet">
-  <!-- <link href="./css/normalize.css" rel="stylesheet" type="text/css"> -->
+  <link href="./css/normalize.css" rel="stylesheet" type="text/css">
   <style>
   </style>
 </head>
@@ -31,24 +29,24 @@
         <img src="images/Booki.png" alt="Booki logo" title="Booki" />
       </nav>
       <nav id="navigation">
-        <a href="#main-section" class="focus">Accommodations</a>
+        <a href="#Accommodations-section" class="focus">Accommodations</a>
         <a href="#Activities-section">Activities</a>
       </nav>
     </div>
   </header>
   <main>
-    <div class="main_section_search">
-          <strong>Find a place for your dream vacation</strong>
-    <p>Downtown or in nature</p>
-    <div class="search-local">
+    <div class="search-section">
+      <strong>Find a place for your dream vacation</strong>
+      <p>Downtown or in nature</p>
+      <div class="search-location">
         <span class="fa-solid fa-location-dot map-icon"></span>
-        <input type="text" class="text_input" placeholder="Marseille,France">
+        <input type="text" class="search-input" placeholder="Marseille,France">
         <button>
-          <span class="search-text">Search</span>
+          <span class="search-button-text">Search</span>
           <span class="search-icon fa fa-search"></span>
         </button>
-      </form>
-    </div>
+        </form>
+      </div>
       <div class="filters">
         <strong>Filters </strong>
         <div class=" filter-item">
@@ -72,14 +70,13 @@
         <i class="fa fa-info fa-xs"></i>
         <p>More than 500 accommodations are available in this city</p>
       </div>
-      </div>
-    <div id="main-section">
-      <div id="Acc-section">
+    </div>
+    <div id="Accommodations-section">
+      <div id="Accommodation-list">
         <h3>Accommadation in Marseille</h3>
         <ul class="image-list">
           <li>
-            <img src="images/Auberge-la-Cannebiere.jpg" alt="location img" title="oldport" />
-            <!-- <a href="#" style="background-image: url('images/Auberge-la-Cannebiere.jpg');"></a> -->
+            <img src="images/Auberge-la-Cannebiere.jpg" alt="Auberge la Cannebiere" title="Auberge la Cannebiere" />
             <div class="details">
               <h5>Auberge la Cannebiere</h5>
               <p>Night starting at <b>25€</b> </p>
@@ -90,88 +87,84 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
               </div>
-              
+
             </div>
           </li>
           <li>
-            <img src="images/Hotel-du-port.jpg" alt="location img" title="oldport" />
-            <!-- <a href="#" style="background-image: url('images/Hotel-du-port.jpg');"></a> -->
+            <img src="images/Hotel-du-port.jpg" alt="Hotel du port" title="Hotel du port" />
             <div class="details">
               <h5>Hotel du port</h5>
-              <p>Night starting at  <b>52€</b></p>
+              <p>Night starting at <b>52€</b></p>
               <div class="rating_star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
               </div>
             </div>
           </li>
           <li>
-            <img src="images/Les-mouettes-Hotel.jpg" alt="location img" title="oldport" />
+            <img src="images/Les-mouettes-Hotel.jpg" alt="Les mouettes Hotel" title="Les mouettes Hotel" />
             <!-- <a href="#" style="background-image: url('images/Les-mouettes-Hotel.jpg');"></a> -->
             <div class="details">
               <h5>Les mouettes Hotel</h5>
-              <p>Night starting at  <b>76€</b></p>
+              <p>Night starting at <b>76€</b></p>
               <div class="rating_star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
               </div>
             </div>
           </li>
         </ul>
         <ul class="image-list">
           <li>
-            <img src="images/Hotel-de-la-mer.jpg" alt="location img" title="oldport" />
-            <!-- <a href="#" style="background-image: url('images/Hotel-de-la-mer.jpg');"></a> -->
+            <img src="images/Hotel-de-la-mer.jpg" alt="Hotel de la mer" title="Hotel de la mer" />
             <div class="details">
               <h5>Hotel de la mer</h5>
-              <p>Night starting at  <b>46€</b></p>
+              <p>Night starting at <b>46€</b></p>
               <div class="rating_star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
-              <span class="fa fa-star"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
               </div>
             </div>
           </li>
           <li>
-            <img src="images/Auberge-la-Cannebiere.jpg" alt="location img" title="oldport" />
-            <!-- <a href="#" style="background-image: url('images/Auberge-Le-Panier.jpg');"></a> -->
+            <img src="images/Auberge-la-Cannebiere.jpg" alt="Auberge Le Panier" title="Auberge Le Panier" />
             <div class="details">
               <h5>Auberge Le Panier</h5>
-              <p>Night starting at  <b>23€</b></p>
+              <p>Night starting at <b>23€</b></p>
               <div class="rating_star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
               </div>
             </div>
           </li>
           <li>
-            <img src="images/Hotel-chez-Amina.jpg" alt="location img" title="oldport" />
-            <!-- <a href="#" style="background-image: url('images/Hotel-chez-Amina.jpg');"></a> -->
+            <img src="images/Hotel-chez-Amina.jpg" alt="Hotel chez Amina" title="Hotel chez Amina" />
             <div class="details">
               <h5>Hotel chez Amina</h5>
-              <p>Night starting at  <b>96€</b></p>
+              <p>Night starting at <b>96€</b></p>
               <div class="rating_star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-            </div>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+              </div>
             </div>
           </li>
         </ul>
-        <h4>show more</h4>
+        <a href="#" id="Accommodation-show-more"><b>Show more</b></a>
       </div>
       <div id="popular-section">
         <nav>
@@ -180,41 +173,38 @@
         </nav>
         <ul id="popular-item">
           <li>
-            <!-- <a href="#" style="background-image: url('images/Morning-SunHotel.jpg');"></a> -->
-            <img src="images/Morning-SunHotel.jpg" alt="location img" title="oldport" />
+            <img src="images/Morning-SunHotel.jpg" alt="Morning Sun Hotel" title="Morning Sun Hotel" />
             <div class="details">
               <h5>Morning Sun Hotel</h5>
               <p>Night starting at 128€</p>
               <div class="rating_star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
               </div>
             </div>
           </li>
           <li>
-            <img src="images/Au-co-de.jpg" alt="location img" title="oldport" />
-            <!-- <a href="#" style="background-image: url('images/Au-co-de.jpg');"></a> -->
+            <img src="images/Au-co-de.jpg" alt="Bed and Breakfast" title="Bed and Breakfast" />
             <div class="details">
               <h5>Au coeur de l'eau Bed and Breakfast</h5>
-              <p>Night starting at  <b>71€</b></p>
+              <p>Night starting at <b>71€</b></p>
               <div class="rating_star">
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star checked"></span>
-              <span class="fa fa-star"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
               </div>
             </div>
           </li>
           <li>
-            <img src="images/Tout-bleu-et-Blanc-Hotel.jpg" alt="location img" title="oldport" />
-            <!-- <a href="#" style="background-image: url('images/Tout-bleu-et-Blanc-Hotel.jpg');"></a> -->
+            <img src="images/Tout-bleu-et-Blanc-Hotel.jpg" alt="Tout bleu et Blanc Hotel" title="Tout bleu et Blanc Hotel" />
             <div class="details">
               <h5>Tout bleu et Blanc Hotel</h5>
-              <p>Night starting at  <b>68€</b></p>
+              <p>Night starting at <b>68€</b></p>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
               <span class="fa fa-star checked"></span>
@@ -225,47 +215,47 @@
         </ul>
       </div>
     </div>
-    <h3 id="Activities_header">Activities in Marseille</h3>
-    <div id="Activities_section">
-      <ul class="Activities_list">
+    <h3 id="Activities-header">Activities in Marseille</h3>
+    <div id="Activities-section">
+      <ul class="Activities-list">
         <li>
-          <img src="images/old_port.jpg" alt="location img" title="oldport" />
+          <img src="images/old_port.jpg" alt="Old Port" title="Old Port" />
           <div class="details">
             <h5>Old Port</h5>
           </div>
         </li>
       </ul>
-      <ul class="Activities_list_two">
+      <ul class="Activities-list-two">
         <li>
-          <img src="images/pomegues_fort.jpg" alt="location img" title="oldport" />
+          <img src="images/pomegues_fort.jpg" alt="Pomegues Fort" title="Pomegues Fort" />
           <div class="details">
             <h5>Pomegues Fort</h5>
           </div>
         </li>
         <li>
-          <img src="images/frioul_island.jpg" alt="location img" title="oldport" />
+          <img src="images/frioul_island.jpg" alt="Frious Island" title="Frious Island" />
           <div class="details">
             <h5>Frious Island</h5>
           </div>
         </li>
       </ul>
-      <ul class="Activities_list" id="Activities-section">
+      <ul class="Activities-list" id="Activities-section">
         <li>
-          <img src="images/calanques_national_park.jpg" alt="location img" title="oldport" />
+          <img src="images/calanques_national_park.jpg" alt="Calanques National Park" title="Calanques National Park" />
           <div class="details">
             <h5>Calanques National Park</h5>
           </div>
         </li>
       </ul>
-      <ul class="Activities_list_two">
+      <ul class="Activities-list-two">
         <li>
-          <img src="images/notre.jpg" alt="location img" title="oldport" />
+          <img src="images/notre.jpg" alt="Notre-Dame-de-la-Grade" />
           <div class="details">
             <h5>Notre-Dame-de-la-Grade</h5>
           </div>
         </li>
         <li>
-          <img src="images/longchamp_park.jpg" alt="location img" title="oldport" />
+          <img src="images/longchamp_park.jpg" alt="Longchamp Park" title="Longchamp Park" />
           <div class="details">
             <h5>Longchamp Park</h5>
           </div>
@@ -278,23 +268,23 @@
 </body>
 <footer>
   <div>
-    <h2 class="footer_heading">About</h2>
-    <ul class="footer_item">
+    <h2 class="footer-heading">About</h2>
+    <ul class="footer-item">
       <li>Site Map</li>
       <li>General Terms and Conditions</li>
       <li>Data and Privacy</li>
     </ul>
   </div>
   <div>
-    <h2 class="footer_heading">Our Accommodations</h2>
-    <ul class="footer_item">
+    <h2 class="footer-heading">Our Accommodations</h2>
+    <ul class="footer-item">
       <li>Quality Assessment</li>
       <li>You have a hotel?</li>
     </ul>
   </div>
   <div>
-    <h2 class="footer_heading">Assistance</h2>
-    <ul class="footer_item">
+    <h2 class="footer-heading">Assistance</h2>
+    <ul class="footer-item">
       <li>Help Desk</li>
       <li>Contact Us</li>
     </ul>
