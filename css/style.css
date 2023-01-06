@@ -124,7 +124,7 @@ ol {
 #Accommodation-list .details{
     line-height: 1 !important;
     margin-left: 10px;
-    margin-bottom: 2px
+    margin-bottom: 10px;
 }
 #Accommodation-list .details h5 ,p{
     margin:8px 0px;
