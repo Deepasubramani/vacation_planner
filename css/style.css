@@ -74,7 +74,7 @@ ol {
 }
 
 .filter-item {
-    border: 0.01rem solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -285,10 +285,6 @@ form {
     margin: 0 auto;
 }
 
-.icon {
-    font-size: 1.5rem;
-    cursor: pointer;
-}
 
 .search-icon {
     display: none;
