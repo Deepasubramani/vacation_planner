@@ -66,7 +66,7 @@ ol {
 
 /* filter style */
 #filters {
-    margin-top: 70px;
+    margin-top: 55px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -81,17 +81,19 @@ ol {
 }
 
 .filter-icon {
-    padding: 10px;
+    padding: 8px;
     background-color: #deebff;
     border-radius: 15px;
 }
 
 .filter-item h5 {
     margin: 0;
-    padding: 5px;
+    padding-right: 13px;
+    padding-left: 7px;
 }
 
 .filter-item .fa-solid {
+    font-size: 13PX;
     color: #0065fc
 }
 /* Accommodation and most popular section */
@@ -121,6 +123,9 @@ ol {
     flex-wrap: wrap;
     gap: 25px;
 }
+#Accommodations-section h3{
+    margin:0px;
+}
 #Accommodation-list .details{
     line-height: 1 !important;
     margin-left: 10px;
@@ -128,6 +133,20 @@ ol {
 }
 #Accommodation-list .details h5 ,p{
     margin:8px 0px;
+}
+.details h5{
+    font-size: 13px;
+}
+#Accommodation-list  .details h5{
+    margin-top:4px;
+    
+}
+.details p{
+    font-size: 12px;
+}
+
+#rating_star{
+    font-size: 11px;
 }
 
 /* Photo */
@@ -154,12 +173,20 @@ ol {
 }
 
 #popular-item .details {
+    position: relative;
     line-height: 1.2;
     width: 160px;
     gap: 4px;
     width:60%;
 }
-
+#popular-item #rating_star{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+}
+#popular-item .details h5{
+    margin-top: 15px;
+}
 #popular-item li>img {
     padding:5px;
     display: block;
@@ -212,13 +239,13 @@ ol {
     flex: 1;
     gap: 20px;
 }
-.Activities-list-two {
+.Activities-double-item {
     display: flex;
     flex-direction: column;
     flex: 1;
     gap: 15px;
 }
-.Activities-list-two li {
+.Activities-double-item li {
     height: 50%;
     border-radius: 15px;
     box-shadow: 0 1px 5px 0 rgb(0 0 0 / 20%);
@@ -252,7 +279,7 @@ ol {
     border-top-right-radius: 15px;
 }
 
-.Activities-list-two img {
+.Activities-double-item img {
     display: block;
     background-size: cover;
     background-repeat: no-repeat;
@@ -264,7 +291,9 @@ ol {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-
+#Activities-header{
+    margin-top: 45px;
+}
 
 
 /* Search bar style */
@@ -291,8 +320,7 @@ form {
 }
 
 .search-location {
-    
-margin-top: 10px;
+    height: 40px;
     position: absolute;
     border: 1px solid #f2f2f2;
     border-radius: 10px;
@@ -307,6 +335,7 @@ margin-top: 10px;
 }
 
 .search-input {
+    text-indent: 5px;
     border: none;
 }
 input:focus{
@@ -322,6 +351,7 @@ input:focus{
 }
 
 .search-location button {
+    height: 38px;
     padding: 10px;
     background: #0065fc;
     color: white;
@@ -344,14 +374,15 @@ input:focus{
 
 
 #Activities-section .details h5 {
+    margin: 15px 0px;
     padding-left: 15px;
 }
 
 /* footer styles */
 footer {
-    margin-top:20px;
-    line-height: 1.5;
-    padding: 30px;
+    font-size: 13px;
+    margin-top:50px;
+    padding: 20px 30px;
     display: flex;
     flex-wrap: wrap;
     background-color: #80808017
@@ -360,10 +391,13 @@ footer div{
     padding-right: 70px;
 }
 .footer-heading {
+    font-size: 14px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
 
 .footer-item {
+    line-height: 1.8;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -436,11 +470,13 @@ footer div{
         margin: 0px !important;
         width: 100% !important;
     }
-
+#popular-item{
+    gap:15px;
+}
     #Activities-header {
         padding-left: 20px;
     }
-    .Activities-list-two img {
+    .Activities-double-item img {
         min-width: 335px !important;
     }
 
@@ -457,6 +493,7 @@ footer div{
     .image-list {
         flex-direction: column;
         padding: 0px;
+        gap:15px;
     }
 
     footer {
